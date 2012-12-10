@@ -14,10 +14,10 @@ next();
 function next() {
   setTimeout(function() {
     if (i < to) return;
-    T.like.send(                                  /* данная функция T.like.send
-      $(".inlineList.iconListNew li:first a"),     * принадлежит самим
-      {"type": 1, "id": pid - to}                  * драугам.лв и выполняет
-    );                                             * асинхронный ajax реквест */
+    T.like.send(                                  /* данная функция T.like.send */
+      $(".inlineList.iconListNew li:first a"),    /* принадлежит самим */
+      {"type": 1, "id": pid - to}                 /* драугам.лв и выполняет */
+    );                                            /* асинхронный ajax реквест */
     console.log(to++);
     next();
   }, Math.ceil((5.23 + 2 * Math.random()) * 1000));
